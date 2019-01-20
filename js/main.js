@@ -21,17 +21,21 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-/*
-    if($('.banners_sidebar_slider .banner_link').length >1){
-        $('.banners_sidebar_slider').slick({
+
+    if($('.main_slider .m_slider_item').length >1){
+        $('.main_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
-            infinite:false,
+            arrows: false,
+            dots:true,
+            fade:true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
         });
     }
 
-    */
+
 
 
 });
