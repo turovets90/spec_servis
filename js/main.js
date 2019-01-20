@@ -38,6 +38,32 @@ $(document).ready(function(){
 
 
 
+    if($('.serv_slider_home .serv_slider_item').length >1){
+        $('.serv_slider_home').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.serv_home_slider_nav',
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    }
+
+
+    $('.serv_home_slider_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.serv_slider_home',
+        dots: false,
+        arrows: false,
+        vertical:true,
+        focusOnSelect: true,
+    });
+
+
+
+
 });
 
 
